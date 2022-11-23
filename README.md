@@ -4,7 +4,6 @@
 
 * python = 3.11
 * django = 4.1.3
-* djangorestframework = 3.14.0
 * stripe = 5.0.0
 * psycopg2-binary = 2.9.5
 
