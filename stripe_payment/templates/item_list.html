@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All items</title>
+</head>
+<body>
+<section>
+    <h1>Items:</h1><br>
+    {% for item in items %}
+        <ul>
+            <li>
+                {{ item.name }}
+            </li>
+            <li>
+                {{ item.description }}
+            </li>
+            <li>
+                {{ item.price }}$
+            </li>
+        </ul>
+        <br>
+        <a href="{% url 'items:item_detail' item.id %}">Посмотреть подробнее {{ item.name }}</a><br>
+    {% endfor %}
+</section>
+</body>
+</html>

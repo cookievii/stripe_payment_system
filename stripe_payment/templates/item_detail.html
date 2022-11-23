@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Item-detail</title>
+</head>
+<body>
+<h1>
+    <ul>
+        <li>
+            Название: {{ item.name }}
+        </li>
+        <li>
+            Описание: {{ item.description }}
+        </li>
+        <li>
+            Стоимость: {{ item.price }}$
+        </li>
+    </ul>
+    <br>
+    <a href="{% url 'items:buy_item' item.id %}">Перейти к покупке</a>
+</h1>
+</body>
+</html>
